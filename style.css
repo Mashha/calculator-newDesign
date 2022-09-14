@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  background-color: black;
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 320px;
+  height: auto;
+  background-color: #343434;
+  border-radius: 50px;
+  grid-template-rows: 1fr 1.5fr;
+}
+
+#display-screen {
+  display: grid;
+  grid-column: 1 / -1;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+}
+
+#displayInput,
+#displayOutput {
+  border: none;
+  text-align: right;
+  background-color: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#displayInput {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: rgb(52, 52, 52);
+}
+
+#displayOutput {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.calc-top {
+  height: 250px;
+  background-image: url('top-design.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.calc-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+button {
+  background-color: #343434;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 200;
+}
+
+button:active {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.05),
+    -0.5px -0.5px 0 rgba(0, 0, 0, 0.1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+}
+
+.overlay {
+  background-color: rgb(237, 66, 100, 0.25);
+  color: #ed4264;
+}
+
+#total {
+  color: black;
+  grid-row: 5;
+  grid-column: 3 / span 2;
+  background: linear-gradient(to right, #ed4264, #ffedbc);
+}
+
+.number,
+#decimal {
+  color: #ffedbc;
+}
+
+span {
+  text-align: center;
+}
+
+#name {
+  font-family: 'Inspiration', cursive;
+  font-size: 25px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ed4264;
+}

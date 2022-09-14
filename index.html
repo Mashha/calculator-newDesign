@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ba4c8dc756.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="calc-top">
+        <div id="display-screen">
+          <input
+            type="text"
+            name="screen"
+            value=""
+            id="displayInput"
+            placeholder="0"
+            disabled
+          />
+          <input
+            type="text"
+            name="screen"
+            value=""
+            id="displayOutput"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="calc-bottom">
+        <button
+          type="button"
+          value="C"
+          name="clear"
+          data-key="Delete"
+          id="clear"
+          class="overlay"
+        >
+          <i class="fas fa-regular fa-c"></i>
+        </button>
+
+        <button
+          type="button"
+          value="%"
+          name="percent"
+          data-key="%"
+          class="overlay"
+          id="percent"
+        >
+          <i class="fas fa-regular fa-percent"></i>
+        </button>
+
+        <button
+          type="button"
+          value="Backspace"
+          name="backspace"
+          data-key="Backspace"
+          id="backspace"
+          class="overlay"
+        >
+          <i class="fas fa-regular fa-delete-left"></i>
+        </button>
+
+        <button
+          type="button"
+          value="*"
+          name="multiply"
+          data-key="*"
+          id="multiply"
+          class="operationButtons overlay"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button
+          type="button"
+          value="7"
+          name="seven"
+          data-key="7"
+          class="number"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          value="8"
+          name="eight"
+          data-key="8"
+          class="number"
+        >
+          8
+        </button>
+        <button type="button" value="9" name="nine" data-key="9" class="number">
+          9
+        </button>
+        <button
+          type="button"
+          value="/"
+          name="divide"
+          data-key="/"
+          id="divide"
+          class="operationButtons overlay"
+        >
+          <i class="fa-solid fa-divide"></i>
+        </button>
+
+        <button type="button" value="4" name="four" data-key="4" class="number">
+          4
+        </button>
+        <button type="button" value="5" name="five" data-key="5" class="number">
+          5
+        </button>
+        <button type="button" value="6" name="six" data-key="6" class="number">
+          6
+        </button>
+        <button
+          type="button"
+          value="+"
+          name="add"
+          data-key="+"
+          id="add"
+          class="operationButtons overlay"
+        >
+          <i class="fas fa-regular fa-plus"></i>
+        </button>
+
+        <button type="button" value="1" name="one" data-key="1" class="number">
+          1
+        </button>
+        <button type="button" value="2" name="two" data-key="2" class="number">
+          2
+        </button>
+        <button
+          type="button"
+          value="3"
+          name="three"
+          data-key="3"
+          class="number"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          value="-"
+          name="subtract"
+          data-key="-"
+          id="subtract"
+          class="operationButtons overlay"
+        >
+          <i class="fas fa-regular fa-minus"></i>
+        </button>
+
+        <button type="button" value="0" name="zero" data-key="0" class="number">
+          0
+        </button>
+        <button
+          type="button"
+          value="."
+          name="decimal"
+          data-key=","
+          id="decimal"
+        >
+          ,
+        </button>
+        <button
+          type="button"
+          value="="
+          name="total"
+          data-key="Enter"
+          id="total"
+        >
+          <i class="far fa-regular fa-equals"></i>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Build and designed by
+        <span id="name">Pimu</span>
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
