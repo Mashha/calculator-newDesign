@@ -15,6 +15,7 @@ body {
 }
 
 .calc {
+  width: 320px;
   display: grid;
   grid-template-columns: 1fr;
   background-color: #343434;
