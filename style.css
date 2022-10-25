@@ -120,7 +120,11 @@ span {
 
 #name {
   font-family: 'Inspiration', cursive;
-  font-size: 25px;
+  color: #ffedbc;
+}
+
+.fa-github {
+  color: #ffedbc;
 }
 
 footer {
@@ -130,10 +134,12 @@ footer {
 }
 
 footer p {
+  font-size: 19px;
   text-align: center;
   margin-bottom: 5px;
-  color: #ed4264;
+  color: #ffedbc;
 }
+
 
 @media (max-width: 375px) {
   .calc {
